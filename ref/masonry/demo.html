@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>masonry</title>
+<style type="text/css">
+#wrapper {
+	background-color:#f2f2f2;
+}
+.box {
+	width:220px;
+	margin:15px 15px 0 15px;
+	padding:10px 10px 35px 10px;
+	background-color:#FFF;
+}
+	.box .img {
+		width:220px;
+		height:165px;
+	}
+	.box h4 {
+		margin:0;
+		color:#b9ce37;
+		font-size:12px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.box h5 {
+		font-size:14px;
+		font-weight:bold;
+		margin:0;
+	}
+	.box .text {
+	}
+	.box .more {
+	}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>1</h5>
+    <div class="text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris. </div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>2</h5>
+    <div class="text">Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>3</h5>
+    <div class="text">Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Ut eget sem risus, et posuere velit.  Aenean ac mauris non ligula. </div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>4</h5>
+    <div class="text">Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>5</h5>
+    <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>6</h5>
+    <div class="text">Cadipiscing in, lacinia vel, tellus. </div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>7</h5>
+    <div class="text">Pellentesque a diam sit amet mi ullamcorper vehicula.  adipiscing in, lacinia vel, tellus.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>8</h5>
+    <div class="text">Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus.  Suspendisse ac urna. Etiam pellentesque. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.  Suspendisse ac urna. Etiam pellentesque. </div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>9</h5>
+    <div class="text">Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Pellentesque a diam sit amet mi ullamcorper vehicula.  adipiscing in, lacinia vel, tellus.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>10</h5>
+    <div class="text">Etiam pellen tesque mauris ut lectus.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>11</h5>
+    <div class="text">Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspen disse ac urna. Ut condi mentum mi vel tellus.</div>
+  </div>
+  <div class="box">
+  	<h4>2011.4.5</h4>
+    <h5>12</h5>
+    <div class="text">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript" src="/masonry/jquery.masonry.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('#wrapper').masonry({
+		singleMode: true,
+		columnWidth: 270});
+});
+</script>
+</html>

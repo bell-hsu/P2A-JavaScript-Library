@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>测试</title>
+</head>
+<style type="text/css">
+	#wrap {width: 410px; height: 90px; overflow: hidden; position: relative;}
+	.ele {margin: 0; padding: 0; width: 410px; position: absolute; top: 0; left: 0; float: left;}
+	.ele li{display: inline;}
+	#wrap .clone {position: absolute; top: 0; left: 410px;}
+	
+	#wrap2 {width: 410px; height: 90px; overflow: hidden; position: relative;}
+	.ele2 {margin: 0; padding: 0; width: 410px; position: absolute; top: 0; left: 0; float: left;}
+	/*.ele li{display: inline;}*/
+	#wrap2 .clone {position: absolute; top: 90px; left: 0px;}
+</style>
+
+<body>
+	<div id="wrap">
+		<ul class="ele">
+			<li>滚动测试1</li>
+			<li>滚动测试2</li>
+			<li>滚动测试3</li>
+			<li>滚动测试4</li>
+			<li>滚动测试5</li>
+		</ul>
+	</div>
+	<div id="wrap2">
+		<ul class="ele2">
+			<li>滚动测试1</li>
+			<li>滚动测试2</li>
+			<li>滚动测试3</li>
+			<li>滚动测试4</li>
+			<li>滚动测试5</li>
+		</ul>
+	</div>
+<script type="text/javascript" src="../lib/jquery.js"></script>
+<script type="text/javascript" src="jquery.animation.js"></script>
+<script type="text/javascript">
+	P2A.animation.scrolling('wrap', 'ele', 'left')
+	P2A.animation.scrolling('wrap2', 'ele2', 'top')
+</script>
+<body>
+</html>
